@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/stephenduenas/react-todo-app/static/css/main.baea404c.chunk.css",
-    "main.js": "/stephenduenas/react-todo-app/static/js/main.e27002dd.chunk.js",
-    "main.js.map": "/stephenduenas/react-todo-app/static/js/main.e27002dd.chunk.js.map",
-    "runtime-main.js": "/stephenduenas/react-todo-app/static/js/runtime-main.fed33955.js",
-    "runtime-main.js.map": "/stephenduenas/react-todo-app/static/js/runtime-main.fed33955.js.map",
-    "static/js/2.ed4de9fc.chunk.js": "/stephenduenas/react-todo-app/static/js/2.ed4de9fc.chunk.js",
-    "static/js/2.ed4de9fc.chunk.js.map": "/stephenduenas/react-todo-app/static/js/2.ed4de9fc.chunk.js.map",
-    "index.html": "/stephenduenas/react-todo-app/index.html",
-    "static/css/main.baea404c.chunk.css.map": "/stephenduenas/react-todo-app/static/css/main.baea404c.chunk.css.map",
-    "static/js/2.ed4de9fc.chunk.js.LICENSE.txt": "/stephenduenas/react-todo-app/static/js/2.ed4de9fc.chunk.js.LICENSE.txt",
-    "static/media/Banner.scss": "/stephenduenas/react-todo-app/static/media/bg-desktop-light.3508d620.jpg",
-    "static/media/icon-check.a8fb15d0.svg": "/stephenduenas/react-todo-app/static/media/icon-check.a8fb15d0.svg",
-    "static/media/icon-cross.6ee81d30.svg": "/stephenduenas/react-todo-app/static/media/icon-cross.6ee81d30.svg",
-    "static/media/icon-moon.6c03114b.svg": "/stephenduenas/react-todo-app/static/media/icon-moon.6c03114b.svg",
-    "static/media/icon-sun.910b1f9a.svg": "/stephenduenas/react-todo-app/static/media/icon-sun.910b1f9a.svg"
+    "main.css": "/react-todo-app/static/css/main.1be447b1.chunk.css",
+    "main.js": "/react-todo-app/static/js/main.e27002dd.chunk.js",
+    "main.js.map": "/react-todo-app/static/js/main.e27002dd.chunk.js.map",
+    "runtime-main.js": "/react-todo-app/static/js/runtime-main.7c6b6b6d.js",
+    "runtime-main.js.map": "/react-todo-app/static/js/runtime-main.7c6b6b6d.js.map",
+    "static/js/2.ed4de9fc.chunk.js": "/react-todo-app/static/js/2.ed4de9fc.chunk.js",
+    "static/js/2.ed4de9fc.chunk.js.map": "/react-todo-app/static/js/2.ed4de9fc.chunk.js.map",
+    "index.html": "/react-todo-app/index.html",
+    "static/css/main.1be447b1.chunk.css.map": "/react-todo-app/static/css/main.1be447b1.chunk.css.map",
+    "static/js/2.ed4de9fc.chunk.js.LICENSE.txt": "/react-todo-app/static/js/2.ed4de9fc.chunk.js.LICENSE.txt",
+    "static/media/Banner.scss": "/react-todo-app/static/media/bg-desktop-light.3508d620.jpg",
+    "static/media/icon-check.a8fb15d0.svg": "/react-todo-app/static/media/icon-check.a8fb15d0.svg",
+    "static/media/icon-cross.6ee81d30.svg": "/react-todo-app/static/media/icon-cross.6ee81d30.svg",
+    "static/media/icon-moon.6c03114b.svg": "/react-todo-app/static/media/icon-moon.6c03114b.svg",
+    "static/media/icon-sun.910b1f9a.svg": "/react-todo-app/static/media/icon-sun.910b1f9a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fed33955.js",
+    "static/js/runtime-main.7c6b6b6d.js",
     "static/js/2.ed4de9fc.chunk.js",
-    "static/css/main.baea404c.chunk.css",
+    "static/css/main.1be447b1.chunk.css",
     "static/js/main.e27002dd.chunk.js"
   ]
 }
