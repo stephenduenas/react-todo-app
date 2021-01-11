@@ -1,0 +1,70 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.light {
+    .todo {
+        &__handle {
+            background-color: $color-light-2;
+            & > div:hover:last-child {
+                color: $color-light-text-active;
+            }
+            &__filter {
+                background-color: $color-light-2;
+                & > div:hover {
+                    color: $color-light-text-active;
+                }
+                &--active {
+                    color: $color-primary;
+                }
+            }
+        }
+     }
+}
+
+.todo {
+    &__handle {
+        transition: background-color $transition-seconds;
+        @include todo-unit;
+        position: relative;
+        background-color: $color-dark-2;
+        justify-content: space-between;
+        border-radius: 0 0 $border-radius $border-radius;
+        font-size: .8rem;
+        & > div:hover:last-child {
+            transition: color $transition-seconds, background-color $transition-seconds;
+            cursor: pointer;
+            color: $color-dark-text-active;
+        }
+        &__filter {
+            transition: background-color $transition-seconds;
+            @include todo-unit;
+            background-color: $color-dark-2;
+            border-radius: 5px;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 125%;
+            justify-content: center;
+            font-size: .9rem;
+            @include media('desktop') {
+                position: relative;
+                padding: 0;
+                align-items: center;
+                width: 50%;
+            }
+            & > div {
+                &:nth-child(2) {
+                    padding: 0 1rem;
+                }
+                &:hover {
+                    transition: color $transition-seconds;
+                    cursor: pointer;
+                    color: $color-dark-text-active;
+                }
+            }
+            &--active {
+                color: $color-primary!important;
+            }
+        }
+    }
+}
