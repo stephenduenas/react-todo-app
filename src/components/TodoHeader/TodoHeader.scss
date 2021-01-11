@@ -1,0 +1,36 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.mode {
+    cursor: pointer;
+    transition: transform .3s;
+    transform: scale(1);
+    img {
+        @include media('desktop') {
+            width: 25px;
+        }
+        width: 20px;
+    }
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+.todo {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        h1 {
+            color: hsl(236, 33%, 92%);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: .5rem;
+            text-transform: uppercase;
+            @include media('desktop') {
+                font-size: 2rem;
+            }
+        }
+    }
+}

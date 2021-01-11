@@ -1,0 +1,29 @@
+@mixin todo-unit {
+    display: flex;
+    padding: .8rem 1rem;
+    @include media('desktop') {
+        padding: 1rem; 
+    }
+}
+
+@mixin light-mode {
+    .light {
+        @content;
+    }
+}
+
+@mixin media($screen) {
+    
+    @if ($screen == 'desktop') {
+        @media only screen and (min-width: 900px) {
+            @content
+        }
+    }
+
+    @if ($screen == 'tablet') {
+        @media only screen and (min-width: 376px) {
+            @content
+        }
+    }
+
+}

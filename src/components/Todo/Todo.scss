@@ -1,0 +1,32 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.todo {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -8.5rem;
+    position: relative;
+    z-index: 1;
+    @include media('tablet') {
+        max-width: 500px;
+    }
+    @include media('desktop') {
+        margin-top: -10rem;
+    }
+    &__list {
+        display: block;
+        list-style: none;
+        border-radius: $border-radius $border-radius 0 0;
+        overflow: hidden;
+        position: relative;
+    }
+    & > p {
+        position: relative;
+        top: 100px;
+        width: 100%;
+        text-align: center;
+        @include media('desktop') {
+            top: 50px;
+        }
+    }
+}

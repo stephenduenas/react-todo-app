@@ -1,0 +1,19 @@
+@import '../../sass/utilities/variables';
+
+.attribution {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+.light {
+    .attribution {
+        color: $color-light-text-active;
+    }
+}

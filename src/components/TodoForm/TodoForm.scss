@@ -1,0 +1,43 @@
+@import '../../sass/utilities/variables';
+@import '../../sass/utilities/mixins';
+
+.todo {
+    &__form {
+        @include todo-unit;
+        background-color: $color-dark-2;
+        align-items: center;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        transition: background-color $transition-seconds;
+        input {
+            transition: background-color $transition-seconds;
+            font-family: inherit;
+            font-size: .8rem;
+            padding: .3rem 0 .2rem;
+            flex: 1;
+            background-color: $color-dark-2;
+            border: none;
+            outline: none;
+            color: $color-dark-text-passive;
+            &:focus {
+                color: $color-dark-text-active;
+            }
+        }
+    }
+}
+
+.light {
+    .todo {
+        &__form {
+            background-color: $color-light-2;
+        }
+        input {
+            background-color: $color-light-2;
+            color: $color-light-text-passive;
+            &:focus {
+                color: $color-light-text-active;
+            }
+        }
+    }
+    
+}
