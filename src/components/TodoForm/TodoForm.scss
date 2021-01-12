@@ -23,6 +23,9 @@
                 color: $color-dark-text-active;
             }
         }
+        input[type="submit"], label {
+            display: none;
+        }
     }
 }
 

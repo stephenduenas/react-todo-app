@@ -17,7 +17,7 @@ const TodoItem = ({oItem, iIndex, onCheckClick, onRemoveClick, id}) => {
                         ref={provided.innerRef}
                     >
                         <span className={`todo__checkbox ${oItem.is_completed === true ? 'todo__checkbox--checked' : ''}`} onClick={() => { onCheckClick(iIndex); }}>
-                            <img className="todo__checkbox__check" src={IconCheck}></img>
+                            <img className="todo__checkbox__check" src={IconCheck} alt="checkbox"></img>
                         </span>
                         <p>{ oItem.name }</p>
                         <span className="todo__delete" onClick={ () => { onRemoveClick(iIndex); }}>
