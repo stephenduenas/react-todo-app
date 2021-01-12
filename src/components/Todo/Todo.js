@@ -12,28 +12,48 @@ const Todo = ({dark_mode, onSetDarkMode}) => {
     const LOCAL_STORAGE_NAME = 'todo_list';
 
     if (!localStorage.getItem(LOCAL_STORAGE_NAME)) {
-        const default_todo_list = JSON.stringify([
+        const DEFAULT_TODO_LIST = JSON.stringify([
             {
                 is_completed: false,
-                name: 'Exercise'
+                name: 'Complete Online Javascript Course'
+            },
+            {
+                is_completed: false,
+                name: 'Jog around the park 3x'
+            },
+            {
+                is_completed: false,
+                name: '10 minutes meditation'
+            },
+            {
+                is_completed: false,
+                name: 'Read for 1 hour'
+            },
+            {
+                is_completed: false,
+                name: 'Pick up groceries'
+            },
+            {
+                is_completed: false,
+                name: 'Complete Todo App on Frontend Mentor'
             },
         ]);
-        localStorage.setItem(LOCAL_STORAGE_NAME, default_todo_list);
+        localStorage.setItem(LOCAL_STORAGE_NAME, DEFAULT_TODO_LIST);
     }
     
     const [filter, setFilter] = useState('All');
 
     const [todo_list, setTodo] = useState(JSON.parse(localStorage.getItem(LOCAL_STORAGE_NAME)));
 
+    const NEW_TODO_LIST = [...todo_list];
+
     const onCheckClick = (iIndex) => {
-        const NEW_TODO_LIST = [...todo_list];
         NEW_TODO_LIST[iIndex].is_completed = !NEW_TODO_LIST[iIndex].is_completed;
         localStorage.setItem(LOCAL_STORAGE_NAME, JSON.stringify(NEW_TODO_LIST));
         setTodo(NEW_TODO_LIST);
     };
 
     const onRemoveClick = (iIndex) => {
-        const NEW_TODO_LIST = [...todo_list];
         NEW_TODO_LIST.splice(iIndex, 1);
         NEW_TODO_LIST.length === 0 ? localStorage.removeItem(LOCAL_STORAGE_NAME) : localStorage.setItem(LOCAL_STORAGE_NAME, JSON.stringify(NEW_TODO_LIST));
         setTodo(NEW_TODO_LIST);
@@ -48,7 +68,6 @@ const Todo = ({dark_mode, onSetDarkMode}) => {
         if (source.droppableId === destination.droppableId && source.index === destination.index) {
             return
         }
-        const NEW_TODO_LIST = [...todo_list];
         NEW_TODO_LIST.splice(destination.index, 0, NEW_TODO_LIST.splice(source.index, 1)[0]);
         localStorage.setItem(LOCAL_STORAGE_NAME, JSON.stringify(NEW_TODO_LIST))
         setTodo(NEW_TODO_LIST);

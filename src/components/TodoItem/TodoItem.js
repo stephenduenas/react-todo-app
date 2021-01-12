@@ -16,11 +16,11 @@ const TodoItem = ({oItem, iIndex, onCheckClick, onRemoveClick, id}) => {
                         {...provided.dragHandleProps}
                         ref={provided.innerRef}
                     >
-                        <span className={`todo__checkbox ${oItem.is_completed === true ? 'todo__checkbox--checked' : ''}`} onClick={() => { onCheckClick(iIndex); }}>
-                            <img className="todo__checkbox__check" src={IconCheck}></img>
+                        <span className={`todo__checkbox ${oItem.is_completed === true ? 'todo__checkbox--checked' : ''}`} onClick={() => onCheckClick(iIndex)}>
+                            <img className="todo__checkbox__check" src={IconCheck} alt="checkbox"></img>
                         </span>
                         <p>{ oItem.name }</p>
-                        <span className="todo__delete" onClick={ () => { onRemoveClick(iIndex); }}>
+                        <span className="todo__delete" onClick={() => onRemoveClick(iIndex)}>
                             <img src={IconCross} alt="delete button"></img>
                         </span>
                     </li>
