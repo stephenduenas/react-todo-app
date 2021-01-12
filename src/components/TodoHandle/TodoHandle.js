@@ -10,8 +10,13 @@ const TodoHandle = ({todo_list, onSetTodo, filter, onSetFilter}) => {
     }
 
     const onClearClick = () => {
-        localStorage.removeItem('todo_list');
-        onSetTodo([]);
+        const FILTERED_TODO_LIST = todo_list.filter((oTodo) => {
+            if (oTodo.is_completed === false) {
+                return oTodo;
+            }
+        });
+        FILTERED_TODO_LIST.length === 0 ? localStorage.removeItem('todo_list') : localStorage.setItem('todo_list', JSON.stringify(FILTERED_TODO_LIST));
+        onSetTodo(FILTERED_TODO_LIST);
     }
 
     const FILTER_EL = FILTERS.map((sFilter, iIndex) => {
