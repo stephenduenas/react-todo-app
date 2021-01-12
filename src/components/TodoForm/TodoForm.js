@@ -37,7 +37,7 @@ const TodoForm = ({todo_list, onSetTodo}) => {
         <form className="todo__form" onSubmit={e => onFormSubmit(e)}>
             <span className="todo__checkbox" onClick={addTodo}></span>
             <label htmlFor="todo_name"></label>
-            <input name="todo_name" id="todo_name" ref={inputEl} type="text" placeholder="Create a new todo..." onChange={ validateInput }></input>
+            <input name="todo_name" id="todo_name" ref={inputEl} type="text" placeholder="Create a new todo..." onChange={validateInput}></input>
             <input type="submit"></input>
         </form>
     );

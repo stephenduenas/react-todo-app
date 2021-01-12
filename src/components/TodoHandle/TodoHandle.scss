@@ -1,26 +1,6 @@
 @import '../../sass/utilities/variables';
 @import '../../sass/utilities/mixins';
 
-.light {
-    .todo {
-        &__handle {
-            background-color: $color-light-2;
-            & > div:hover:last-child {
-                color: $color-light-text-active;
-            }
-            &__filter {
-                background-color: $color-light-2;
-                & > div:hover {
-                    color: $color-light-text-active;
-                }
-                &--active {
-                    color: $color-primary;
-                }
-            }
-        }
-     }
-}
-
 .todo {
     &__handle {
         transition: background-color $transition-seconds;
@@ -67,4 +47,24 @@
             }
         }
     }
+}
+
+.light {
+    .todo {
+        &__handle {
+            background-color: $color-light-2;
+            & > div:hover:last-child {
+                color: $color-light-text-active;
+            }
+            &__filter {
+                background-color: $color-light-2;
+                & > div:hover {
+                    color: $color-light-text-active;
+                }
+                &--active {
+                    color: $color-primary;
+                }
+            }
+        }
+     }
 }

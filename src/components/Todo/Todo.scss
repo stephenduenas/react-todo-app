@@ -2,11 +2,10 @@
 @import '../../sass/utilities/mixins';
 
 .todo {
+    position: relative;
     width: 90%;
     margin: 0 auto;
     margin-top: -8.5rem;
-    position: relative;
-    z-index: 1;
     @include media('tablet') {
         max-width: 500px;
     }
@@ -15,10 +14,10 @@
     }
     &__list {
         display: block;
+        position: relative;
         list-style: none;
         border-radius: $border-radius $border-radius 0 0;
         overflow: hidden;
-        position: relative;
     }
     & > p {
         position: relative;
